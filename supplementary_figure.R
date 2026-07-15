@@ -104,7 +104,7 @@ metadata.filtered <- metadata.filtered[!duplicated(metadata.filtered$Virus.name)
 nrow(metadata.filtered)
 
 ##########
-data_add.name <- paste("/Volumes/annin-tofu/variant_monitoring/output/",out_prefix,"/add/add.metadata.filtered.tsv",sep = "")
+data_add.name <- paste(out_prefix,"/add/add.metadata.filtered.tsv",sep = "")
 
 data_add <- fread(data_add.name,header=T,sep="\t",quote="",check.names=T)
 data_add <- data_add %>%
